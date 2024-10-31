@@ -15,6 +15,7 @@ jobs:
         id: create-comment
         uses: actions/github-script@v5
         with:
+          node-version: '20'
           script: |
             const issue_number = 1; // Replace with the actual issue number
             const { owner, repo } = context.repo;
